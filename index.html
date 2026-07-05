@@ -1,11 +1,73 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd-131</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Denis Muendo</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Denis Muendo Nzomo | Course landing page with links, projects, and assignment info" />
+    <meta name="author" content="My Name is Denis Muendo Nzomo.I prefer to be called Just DM, My name abbreviations. I am from Africa Nairobi-Kenya. Kenya is a beautiful country in East Africa comprised of diverse wildlife and cultures.It is a country of rich history and natural beauty also known as the City under the sun." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-<h1>wdd-131-Denis Muendo</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scriptures</a>
+            <a href="#final-project">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Denis Muendo</h1>
+        <div class="grid-cards">
+            <section class="card about-card">
+                <div class="card-header">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-copy">
+                        <p>My name is Denis Muendo, and I prefer to be called DM. I am from Nairobi, Kenya, Currently a final year student at Laikipia University pursuing a Degree in Geoscience and also a BYU-Pathway student, and I am excited to learn web development through WDD 131.</p>
+                        <p>I enjoy exploring design, creating useful user interfaces, and writing code that is both simple and accessible. I am building this course landing page with HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <img src="images/Denis Muendo.jpg" alt="Portrait of Denis Muendo">
+                </div>
+                <hr>
+                <div class="location-block">
+                    <div class="flag">
+                        <img src="images/Official Kenyas Flag.jpeg" alt="Official Flag of Kenya">
+                        <p class="caption">Official Flag of Kenya</p>
+                    </div>
+                    <div class="location-copy">
+                        <h3>Nairobi, Kenya</h3>
+                        <p>Kenya is a country in East Africa known as home of heroes,The city under the sun and its diverse wildlife, rich culture, and stunning landscapes.It is also home to the Great Rift Valley,Mount Kenya, great world marathoner's, rich wildlife and it is the only city with a wildlife park at the C.B.D.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card resources-card">
+                <div class="card-header">
+                    <h2>Web Dev Resources</h2>
+                </div>
+                <ul class="resource-list">
+                    <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+                    <li><a href="https://www.lipsum.com/" target="_blank" rel="noopener">Lorem Pisum Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Denis Muendo, Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
