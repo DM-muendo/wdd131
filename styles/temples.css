@@ -1,0 +1,160 @@
+:root {
+  --background: #f6f1ff;
+  --surface: #ffffff;
+  --accent: #582d82;
+  --accent-light: #8f64c9;
+  --text: #2c1f3b;
+  --muted: #5f5478;
+  --border: rgba(88, 45, 130, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Karla', Arial, sans-serif;
+  background: radial-gradient(circle at top, #f4ecff 0%, #f6f1ff 38%, #ffffff 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.site-header {
+  background: linear-gradient(180deg, #4f308f 0%, #521c89 100%);
+  color: #fff;
+  padding: 1rem 1rem 0.75rem;
+}
+
+.brand-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-toggle {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #fff;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+.site-nav {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.site-nav.open {
+  display: flex;
+}
+
+.site-nav a {
+  display: block;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: rgba(255, 255, 255, 0.26);
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  padding: 0 1rem 1.5rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  margin: 0;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.page-intro {
+  max-width: 620px;
+  margin: 0.85rem auto 1.8rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+figure {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 18px 40px rgba(89, 43, 142, 0.08);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 1rem 1rem 1.15rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+}
+
+footer {
+  padding: 1rem 1rem 2rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0.35rem 0;
+}
+
+a:focus,
+button:focus {
+  outline: 3px solid rgba(145, 81, 202, 0.35);
+  outline-offset: 2px;
+}

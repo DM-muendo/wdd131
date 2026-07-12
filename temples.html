@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Album | Denis Muendo</title>
+  <meta name="description" content="Responsive temple album featuring sacred temples, mobile navigation, and JavaScript-powered footer dates." />
+  <meta name="author" content="Denis Muendo Nzomo" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand-row">
+      <span class="brand-name">Temple Album</span>
+      <button class="nav-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+    <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="#old">Old</a>
+      <a href="#new">New</a>
+      <a href="#large">Large</a>
+      <a href="#small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="home">Home</h1>
+    <p class="page-intro">Explore a collection of sacred temples arranged in a responsive album layout. Use the hamburger button on mobile to open and close the navigation.</p>
+
+    <section class="gallery-grid">
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Salt Lake City Utah</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Portland Oregon</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Fresno California</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Oquirrh Mountain Utah</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Provo Utah</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Rexburg Idaho</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Boise Idaho</figcaption>
+      </figure>
+      <figure>
+        <img src="https://byui-cse.github.io/wdd131-ww-course/images/temples-small.png" alt="White temple building with blue sky" />
+        <figcaption>Laie Hawaii</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Denis Muendo, Kenya</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
