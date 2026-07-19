@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Page | Nairobi, Kenya</title>
+  <meta name="description" content="A responsive country page for Nairobi, Kenya with weather, highlights, and a polished hero layout." />
+  <meta name="author" content="Denis Muendo Nzomo" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand-block">
+      <p class="eyebrow">W03 Assignment</p>
+      <h1>Nairobi, Kenya</h1>
+    </div>
+    <p class="site-tagline">A city where urban energy meets wildlife and culture.</p>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <section class="hero-card" aria-labelledby="place-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Discover the place</p>
+        <h2 id="place-title">A lively capital shaped by sky, culture, and community.</h2>
+        <p>Nairobi is the beating heart of Kenya, known for its fast pace, rich heritage, and the rare chance to see wildlife just beyond the city streets.</p>
+        <a class="cta-link" href="#highlights">Explore highlights</a>
+      </div>
+      <picture class="hero-media">
+        <source media="(min-width: 900px)" srcset="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80&fm=webp 1200w" type="image/webp">
+        <source srcset="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=700&q=80&fm=webp 700w" type="image/webp">
+        <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=700&q=80" alt="A broad city skyline with greenery and bright clouds in Nairobi." loading="eager">
+      </picture>
+    </section>
+
+    <section class="content-grid" aria-label="Place overview and weather">
+      <article class="card overview-card">
+        <h3>Why it stands out</h3>
+        <p>Nairobi offers a unique blend of modern city life and unforgettable natural beauty. It is home to vibrant markets, historic landmarks, and the famed Nairobi National Park.</p>
+        <ul class="feature-list">
+          <li>Warm, sunny weather most of the year</li>
+          <li>Rich cuisine and lively local markets</li>
+          <li>Easy access to wildlife and outdoor adventure</li>
+        </ul>
+      </article>
+
+      <aside class="card weather-card" aria-labelledby="weather-heading">
+        <div class="weather-heading">
+          <h3 id="weather-heading">Weather</h3>
+          <div class="weather-icon-mobile" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" aria-label="Sunny weather icon">
+              <circle cx="32" cy="32" r="12" fill="#f2b84b"></circle>
+              <g stroke="#f2b84b" stroke-width="3" stroke-linecap="round">
+                <line x1="32" y1="8" x2="32" y2="16"></line>
+                <line x1="32" y1="48" x2="32" y2="56"></line>
+                <line x1="12" y1="32" x2="20" y2="32"></line>
+                <line x1="44" y1="32" x2="52" y2="32"></line>
+                <line x1="18" y1="18" x2="24" y2="24"></line>
+                <line x1="40" y1="40" x2="46" y2="46"></line>
+                <line x1="18" y1="46" x2="24" y2="40"></line>
+                <line x1="40" y1="24" x2="46" y2="18"></line>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <p>Expect a bright afternoon with calm breezes and comfortable temperatures.</p>
+        <dl class="weather-data">
+          <div>
+            <dt>Temperature</dt>
+            <dd>40°F</dd>
+          </div>
+          <div>
+            <dt>Wind speed</dt>
+            <dd>10 mph</dd>
+          </div>
+          <div>
+            <dt>Wind chill</dt>
+            <dd id="wind-chill">N/A</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="highlights" class="info-grid" aria-label="Highlights">
+      <article class="card detail-card">
+        <h3>Culture</h3>
+        <p>Music, art, and local cuisine weave together in the city’s neighborhoods and markets.</p>
+      </article>
+      <article class="card detail-card">
+        <h3>Wildlife</h3>
+        <p>Nairobi National Park gives visitors the rare chance to see giraffes and rhinos near the skyline.</p>
+      </article>
+      <article class="card detail-card">
+        <h3>Community</h3>
+        <p>Residents are known for their warmth, strong hospitality, and pride in their capital city.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Denis Muendo, Kenya</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
