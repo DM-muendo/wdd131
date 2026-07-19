@@ -99,8 +99,13 @@ a {
 
 .hero-card {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
   padding: 1rem;
+  align-items: center;
+}
+
+.hero-copy {
+  align-self: center;
 }
 
 .hero-copy h2 {
@@ -124,11 +129,18 @@ a {
   font-weight: 700;
 }
 
+.hero-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-media img {
-  width: 100%;
+  width: min(100%, 440px);
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 1rem;
+  box-shadow: 0 12px 28px rgba(31, 75, 75, 0.14);
 }
 
 .content-grid {
@@ -219,9 +231,10 @@ footer p {
   }
 
   .hero-card {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1.05fr 0.95fr;
     align-items: center;
-    padding: 1.4rem;
+    padding: 1.2rem 1.2rem 1rem;
+    gap: 0.9rem;
   }
 
   .content-grid {
